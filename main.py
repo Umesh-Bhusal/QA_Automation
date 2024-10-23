@@ -91,6 +91,23 @@ driver.find_element(By.XPATH, "//input[@id='txt_visit_date']").click()
 time.sleep(4)
 
 
+driver.find_element(By.XPATH, "//textarea[@id='txt_comment']").send_keys("hello world")
+
+time.sleep(3)
+
+# Datetoday=driver.find_element(By.XPATH, "//td[@class='active day']")
+# Datetoday.click()
+# time.sleep(2)
+driver.find_element(By.XPATH, "//button[@id='btn-book-appointment']").click()
+
+
+#To check the title of the website and current url
+
+print(driver.title)
+print(driver.current_url)
+time.sleep(2)
+
+
 
 
 
