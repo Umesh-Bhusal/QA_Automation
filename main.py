@@ -89,16 +89,24 @@ time.sleep(2)#driver.find_element(By.NAME, "username").send_keys("Admin")
 
 driver.find_element(By.XPATH, "//input[@id='txt_visit_date']").click()
 time.sleep(4)
+# Date picker
+Datetoday=driver.find_element(By.XPATH, "/html/body/div/div[1]/table/tbody/tr[4]/td[4] ")
+Datetoday.click()
+time.sleep(2)
 
 
+#comment
 driver.find_element(By.XPATH, "//textarea[@id='txt_comment']").send_keys("hello world")
+time.sleep(3)
+
+driver.find_element(By.XPATH, "//button[@id='btn-book-appointment']").click()
 
 time.sleep(3)
 
-# Datetoday=driver.find_element(By.XPATH, "//td[@class='active day']")
-# Datetoday.click()
-# time.sleep(2)
-driver.find_element(By.XPATH, "//button[@id='btn-book-appointment']").click()
+
+
+
+
 
 
 #To check the title of the website and current url
